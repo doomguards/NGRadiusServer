@@ -1,0 +1,14 @@
+﻿#记录ErrLog
+LogErr=True
+#记录InfoLog
+LogInfo=True
+#记录DebugInfo
+DebugInfo=True
+#IP=192.168.1.1 不填充时获取本机第一个网卡绑定IP
+#Port=1812
+#用户列表刷新时间
+RefreshSeconds=30
+#缓存列表检测时间
+CacheMonitorInterval=3
+#校验密匙
+SharedSecret=1111122222

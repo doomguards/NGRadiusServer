@@ -1,0 +1,11 @@
+E:\Net\NRadiuClientTest\NGRadius.WinServer\bin\Debug\SConfig.txt
+E:\Net\NRadiuClientTest\NGRadius.WinServer\bin\Debug\NGRadius.WinServer.exe.config
+E:\Net\NRadiuClientTest\NGRadius.WinServer\bin\Debug\NGRadius.WinServer.exe
+E:\Net\NRadiuClientTest\NGRadius.WinServer\bin\Debug\NGRadius.WinServer.pdb
+E:\Net\NRadiuClientTest\NGRadius.WinServer\bin\Debug\NGRadius.Core.dll
+E:\Net\NRadiuClientTest\NGRadius.WinServer\bin\Debug\NGRadius.Core.pdb
+E:\Net\NRadiuClientTest\NGRadius.WinServer\obj\x86\Debug\NGRadius.WinServer.csprojResolveAssemblyReference.cache
+E:\Net\NRadiuClientTest\NGRadius.WinServer\obj\x86\Debug\NGRadius.WinServer.ProjectInstaller.resources
+E:\Net\NRadiuClientTest\NGRadius.WinServer\obj\x86\Debug\NGRadius.WinServer.csproj.GenerateResource.Cache
+E:\Net\NRadiuClientTest\NGRadius.WinServer\obj\x86\Debug\NGRadius.WinServer.exe
+E:\Net\NRadiuClientTest\NGRadius.WinServer\obj\x86\Debug\NGRadius.WinServer.pdb

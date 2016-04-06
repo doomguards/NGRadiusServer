@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="WinRadiusModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="WinRadiusModelStoreContainer">
+    <EntitySet Name="Sys_Log" EntityType="WinRadiusModel.Store.Sys_Log" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="tbUsers" EntityType="WinRadiusModel.Store.tbUsers" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="Sys_Log">
+    <Key>
+      <PropertyRef Name="RecId" />
+    </Key>
+    <Property Name="RecId" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="AddTime" Type="datetime" />
+    <Property Name="Msg" Type="nvarchar(max)" />
+    <Property Name="LogType" Type="nvarchar" MaxLength="20" />
+    <Property Name="CodeSoure" Type="nvarchar" MaxLength="200" />
+    <Property Name="Flag" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tbUsers">
+    <Key>
+      <PropertyRef Name="RecId" />
+    </Key>
+    <Property Name="username" Type="varchar" MaxLength="25" />
+    <Property Name="password" Type="varchar" MaxLength="25" />
+    <Property Name="groups" Type="varchar" MaxLength="25" />
+    <Property Name="addr" Type="varchar" MaxLength="255" />
+    <Property Name="cash" Type="float" />
+    <Property Name="expiry" Type="varchar" MaxLength="25" />
+    <Property Name="others" Type="varchar" MaxLength="255" />
+    <Property Name="method" Type="varchar" MaxLength="255" />
+    <Property Name="billtype" Type="varchar" MaxLength="255" />
+    <Property Name="EmpNo" Type="nvarchar" MaxLength="50" />
+    <Property Name="EmpName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Detp" Type="nvarchar" MaxLength="50" />
+    <Property Name="RecId" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="EQType" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+</Schema>

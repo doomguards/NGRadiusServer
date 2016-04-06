@@ -1,0 +1,5 @@
+E:\Net\NRadiuClientTest\NGRadius.Core\bin\Debug\NGRadius.Core.dll.config
+E:\Net\NRadiuClientTest\NGRadius.Core\bin\Debug\NGRadius.Core.dll
+E:\Net\NRadiuClientTest\NGRadius.Core\bin\Debug\NGRadius.Core.pdb
+E:\Net\NRadiuClientTest\NGRadius.Core\obj\Debug\NGRadius.Core.dll
+E:\Net\NRadiuClientTest\NGRadius.Core\obj\Debug\NGRadius.Core.pdb

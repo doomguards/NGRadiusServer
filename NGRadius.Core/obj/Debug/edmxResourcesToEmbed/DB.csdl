@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="WinRadiusModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="WinRadiusEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Sys_Log" EntityType="WinRadiusModel.Sys_Log" />
+    <EntitySet Name="tbUsers" EntityType="WinRadiusModel.tbUsers" />
+  </EntityContainer>
+  <EntityType Name="Sys_Log">
+    <Key>
+      <PropertyRef Name="RecId" />
+    </Key>
+    <Property Name="RecId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AddTime" Type="DateTime" />
+    <Property Name="Msg" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="LogType" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+    <Property Name="CodeSoure" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+    <Property Name="Flag" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="tbUsers">
+    <Key>
+      <PropertyRef Name="RecId" />
+    </Key>
+    <Property Name="username" Type="String" MaxLength="25" Unicode="false" FixedLength="false" />
+    <Property Name="password" Type="String" MaxLength="25" Unicode="false" FixedLength="false" />
+    <Property Name="groups" Type="String" MaxLength="25" Unicode="false" FixedLength="false" />
+    <Property Name="addr" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="cash" Type="Double" />
+    <Property Name="expiry" Type="String" MaxLength="25" Unicode="false" FixedLength="false" />
+    <Property Name="others" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="method" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="billtype" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+    <Property Name="EmpNo" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="EmpName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="Detp" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+    <Property Name="RecId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EQType" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+  </EntityType>
+</Schema>

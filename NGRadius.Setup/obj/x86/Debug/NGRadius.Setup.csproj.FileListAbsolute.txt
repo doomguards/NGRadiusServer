@@ -1,0 +1,17 @@
+E:\Net\NRadiuClientTest\NGRadius.Setup\bin\Debug\SConfig.txt
+E:\Net\NRadiuClientTest\NGRadius.Setup\bin\Debug\NGRadius.WinServer.exe.config
+E:\Net\NRadiuClientTest\NGRadius.Setup\bin\Debug\NGRadius.Setup.exe.config
+E:\Net\NRadiuClientTest\NGRadius.Setup\bin\Debug\NGRadius.Setup.exe
+E:\Net\NRadiuClientTest\NGRadius.Setup\bin\Debug\NGRadius.Setup.pdb
+E:\Net\NRadiuClientTest\NGRadius.Setup\bin\Debug\NGRadius.Core.dll
+E:\Net\NRadiuClientTest\NGRadius.Setup\bin\Debug\NGRadius.WinServer.exe
+E:\Net\NRadiuClientTest\NGRadius.Setup\bin\Debug\NGRadius.Core.pdb
+E:\Net\NRadiuClientTest\NGRadius.Setup\bin\Debug\NGRadius.WinServer.pdb
+E:\Net\NRadiuClientTest\NGRadius.Setup\obj\x86\Debug\NGRadius.Setup.csprojResolveAssemblyReference.cache
+E:\Net\NRadiuClientTest\NGRadius.Setup\obj\x86\Debug\NGRadius.Setup.Form1.resources
+E:\Net\NRadiuClientTest\NGRadius.Setup\obj\x86\Debug\NGRadius.Setup.Properties.Resources.resources
+E:\Net\NRadiuClientTest\NGRadius.Setup\obj\x86\Debug\NGRadius.Setup.csproj.GenerateResource.Cache
+E:\Net\NRadiuClientTest\NGRadius.Setup\obj\x86\Debug\NGRadius.Setup.exe
+E:\Net\NRadiuClientTest\NGRadius.Setup\obj\x86\Debug\NGRadius.Setup.pdb
+E:\Net\NRadiuClientTest\NGRadius.Setup\bin\Debug\Table.sql
+E:\Net\NRadiuClientTest\NGRadius.Setup\bin\Debug\说明.txt

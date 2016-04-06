@@ -1,0 +1,7 @@
+﻿1.配合网件(NETGEAR)的WNAP210使用
+2.先远行脚本安装数据库
+3.调整配置文件NGRadius.WinServer.exe.config 中的连接字符串
+4.设置配置文件SConfig.txt, 主要是SharedSecret参数
+5.运行NGRadius.Setup.exe 安装windows服务
+
+需要.net4.0 环境，在win7,win2003(x64),win2008(x64)上测试通过

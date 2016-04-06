@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="WinRadiusModelStoreContainer" CdmEntityContainer="WinRadiusEntities">
+    <EntitySetMapping Name="Sys_Log">
+      <EntityTypeMapping TypeName="WinRadiusModel.Sys_Log">
+        <MappingFragment StoreEntitySet="Sys_Log">
+          <ScalarProperty Name="RecId" ColumnName="RecId" />
+          <ScalarProperty Name="AddTime" ColumnName="AddTime" />
+          <ScalarProperty Name="Msg" ColumnName="Msg" />
+          <ScalarProperty Name="LogType" ColumnName="LogType" />
+          <ScalarProperty Name="CodeSoure" ColumnName="CodeSoure" />
+          <ScalarProperty Name="Flag" ColumnName="Flag" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbUsers">
+      <EntityTypeMapping TypeName="WinRadiusModel.tbUsers">
+        <MappingFragment StoreEntitySet="tbUsers">
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="groups" ColumnName="groups" />
+          <ScalarProperty Name="addr" ColumnName="addr" />
+          <ScalarProperty Name="cash" ColumnName="cash" />
+          <ScalarProperty Name="expiry" ColumnName="expiry" />
+          <ScalarProperty Name="others" ColumnName="others" />
+          <ScalarProperty Name="method" ColumnName="method" />
+          <ScalarProperty Name="billtype" ColumnName="billtype" />
+          <ScalarProperty Name="EmpNo" ColumnName="EmpNo" />
+          <ScalarProperty Name="EmpName" ColumnName="EmpName" />
+          <ScalarProperty Name="Detp" ColumnName="Detp" />
+          <ScalarProperty Name="RecId" ColumnName="RecId" />
+          <ScalarProperty Name="EQType" ColumnName="EQType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

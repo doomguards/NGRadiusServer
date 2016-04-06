@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="WinRadiusModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="WinRadiusModelStoreContainer">
+          <EntitySet Name="Sys_Log" EntityType="WinRadiusModel.Store.Sys_Log" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="tbUsers" EntityType="WinRadiusModel.Store.tbUsers" store:Type="Tables" Schema="dbo" />
+        </EntityContainer>
+        <EntityType Name="Sys_Log">
+          <Key>
+            <PropertyRef Name="RecId" />
+          </Key>
+          <Property Name="RecId" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="AddTime" Type="datetime" />
+          <Property Name="Msg" Type="nvarchar(max)" />
+          <Property Name="LogType" Type="nvarchar" MaxLength="20" />
+          <Property Name="CodeSoure" Type="nvarchar" MaxLength="200" />
+          <Property Name="Flag" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="tbUsers">
+          <Key>
+            <PropertyRef Name="RecId" />
+          </Key>
+          <Property Name="username" Type="varchar" MaxLength="25" />
+          <Property Name="password" Type="varchar" MaxLength="25" />
+          <Property Name="groups" Type="varchar" MaxLength="25" />
+          <Property Name="addr" Type="varchar" MaxLength="255" />
+          <Property Name="cash" Type="float" />
+          <Property Name="expiry" Type="varchar" MaxLength="25" />
+          <Property Name="others" Type="varchar" MaxLength="255" />
+          <Property Name="method" Type="varchar" MaxLength="255" />
+          <Property Name="billtype" Type="varchar" MaxLength="255" />
+          <Property Name="EmpNo" Type="nvarchar" MaxLength="50" />
+          <Property Name="EmpName" Type="nvarchar" MaxLength="50" />
+          <Property Name="Detp" Type="nvarchar" MaxLength="50" />
+          <Property Name="RecId" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="EQType" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="WinRadiusModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="WinRadiusEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Sys_Log" EntityType="WinRadiusModel.Sys_Log" />
+          <EntitySet Name="tbUsers" EntityType="WinRadiusModel.tbUsers" />
+        </EntityContainer>
+        <EntityType Name="Sys_Log">
+          <Key>
+            <PropertyRef Name="RecId" />
+          </Key>
+          <Property Name="RecId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="AddTime" Type="DateTime" />
+          <Property Name="Msg" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="LogType" Type="String" MaxLength="20" Unicode="true" FixedLength="false" />
+          <Property Name="CodeSoure" Type="String" MaxLength="200" Unicode="true" FixedLength="false" />
+          <Property Name="Flag" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="tbUsers">
+          <Key>
+            <PropertyRef Name="RecId" />
+          </Key>
+          <Property Name="username" Type="String" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="password" Type="String" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="groups" Type="String" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="addr" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="cash" Type="Double" />
+          <Property Name="expiry" Type="String" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="others" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="method" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="billtype" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="EmpNo" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="EmpName" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Detp" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="RecId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="EQType" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="WinRadiusModelStoreContainer" CdmEntityContainer="WinRadiusEntities">
+          <EntitySetMapping Name="Sys_Log">
+            <EntityTypeMapping TypeName="WinRadiusModel.Sys_Log">
+              <MappingFragment StoreEntitySet="Sys_Log">
+                <ScalarProperty Name="RecId" ColumnName="RecId" />
+                <ScalarProperty Name="AddTime" ColumnName="AddTime" />
+                <ScalarProperty Name="Msg" ColumnName="Msg" />
+                <ScalarProperty Name="LogType" ColumnName="LogType" />
+                <ScalarProperty Name="CodeSoure" ColumnName="CodeSoure" />
+                <ScalarProperty Name="Flag" ColumnName="Flag" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbUsers">
+            <EntityTypeMapping TypeName="WinRadiusModel.tbUsers">
+              <MappingFragment StoreEntitySet="tbUsers">
+                <ScalarProperty Name="username" ColumnName="username" />
+                <ScalarProperty Name="password" ColumnName="password" />
+                <ScalarProperty Name="groups" ColumnName="groups" />
+                <ScalarProperty Name="addr" ColumnName="addr" />
+                <ScalarProperty Name="cash" ColumnName="cash" />
+                <ScalarProperty Name="expiry" ColumnName="expiry" />
+                <ScalarProperty Name="others" ColumnName="others" />
+                <ScalarProperty Name="method" ColumnName="method" />
+                <ScalarProperty Name="billtype" ColumnName="billtype" />
+                <ScalarProperty Name="EmpNo" ColumnName="EmpNo" />
+                <ScalarProperty Name="EmpName" ColumnName="EmpName" />
+                <ScalarProperty Name="Detp" ColumnName="Detp" />
+                <ScalarProperty Name="RecId" ColumnName="RecId" />
+                <ScalarProperty Name="EQType" ColumnName="EQType" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams>
+      <Diagram Name="DB">
+        <EntityTypeShape EntityType="WinRadiusModel.Sys_Log" Width="1.5" PointX="0.75" PointY="0.75" Height="2.16105224609375" IsExpanded="true" />
+        <EntityTypeShape EntityType="WinRadiusModel.tbUsers" Width="1.5" PointX="2.75" PointY="0.75" Height="3.6892097981770826" IsExpanded="true" />
+      </Diagram>
+    </Diagrams>
+  </Designer>
+</edmx:Edmx>
